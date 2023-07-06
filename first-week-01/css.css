@@ -1,0 +1,325 @@
+#frame01{
+    display: flex;
+    justify-content: right;
+    
+}
+.title0{
+    width: 99%;
+    position:absolute;
+    flex:none;
+    
+}
+#titleM{
+    display: flex;
+    /* justify-items: flex-end; */
+    
+}
+.title01{
+    flex: auto;
+    background-color: #ffffff;
+    margin-left: 3px;
+    margin-bottom: 2px;
+
+}
+#mobile-t{
+    display: none;
+    justify-content: flex-end;
+}
+#welcome{
+    margin: 0px 0px 3px 0px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 250px;
+    height: 250px;
+    background-color: #b4f0ff;
+}
+#name{
+    display: flex;
+    padding: auto;
+    line-height: 250px;
+    background-color: #595a95;
+}
+.frame{
+    max-width: 1200px;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right:15%;
+    display: flex;
+    margin-top: 20px;
+    
+    justify-content:center
+    
+}
+.left{
+    flex:none;
+    width: 33.3%;
+    margin: 0px 20px 0px 22.1%;
+    background-color: blue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.center{
+    flex:none;
+    width: 33.3%;
+    margin: 0px 20px 0px 0px;
+    background-color: red;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.right{
+    flex:none;
+    width: 33.3%;
+    margin: 0px 23% 0px 0px;
+    background-color: #fa0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.frame2{
+    max-width: 1200px;
+    /* margin:0 auto; */
+    
+    box-sizing: border-box;
+    display: flex;
+    /* outline: solid 1px #fa0; */
+    display: grid;
+    margin-left: 15%;
+    margin-right:15%;
+    /* margin-top: 20px; */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "B1 B2 B3 B4 B5 B6"
+        "B7 B8 B9 B10 B11 B12";
+    grid-gap: 20px;
+    
+}
+
+.block{
+    text-align: center;
+    line-height: 45px;
+    
+} 
+
+.pic{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+#AA{
+    grid-area: B1;
+    background-color: #faa;
+}
+#BB{
+    grid-area: B2;
+    background-color: #afa;
+}
+#CC{
+    grid-area: B3;
+    background-color: #faa;
+}
+#DD{
+    grid-area: B4;
+    background-color: #afa;
+}
+#EE{
+    grid-area: B5;
+    background-color: #faa;
+}
+#FF{
+    grid-area: B6;
+    background-color: #afa;
+}
+#GG{
+    grid-area: B7;
+    background-color: #faa;
+}
+#HH{
+    grid-area: B8;
+    background-color: #afa;
+}
+#II{
+    grid-area: B9;
+    background-color: #faa;
+}
+#JJ{
+    grid-area: B10;
+    background-color: #afa;
+}
+#KK{
+    grid-area: B11;
+    background-color: #faa;
+}
+#LL{
+    grid-area: B12;
+    background-color: #afa;
+}
+
+@media (max-width: 1200px){
+   
+    .frame{
+        max-width: 1200px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1px;
+        padding: 20px ;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        /* margin-left: auto; */
+    }
+    .left{
+        flex: auto;
+        
+        margin: 0px 5px 0px 0px;
+        width: 45%;
+        height: 50px;
+    }
+    .center{
+        flex: auto  ;
+        margin: 0px 0px 0px 10px;
+        width: 45%;
+        height: 50px;
+    }
+    .right{
+        /* flex-grow: 1; */
+        flex: auto;
+        /* flex:none; */
+        width: 80%;
+        height: 50px;
+
+        margin: 10px 0px 5px 1px;
+        /* justify-content: left;
+        text-align: left;  */
+    }
+    .frame2{
+        max-width: 1200px;
+        display: grid;
+        /* justify-content: center; */
+        padding : 0px 20px 20px 20px ;
+        box-sizing: border-box;
+        margin: 0px 0px;
+        grid-template-rows: 1fr 1fr;    
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "B1 B2 B3 B4"
+        "B5 B6 B7 B8"
+        "B9 B10 B11 B12";
+        /* grid-gap: 8px; */
+
+    }
+    .pic{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    vertical-align: top;
+    }
+    .block{
+        
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+@media (max-width :600px) {
+    .title0{
+    width: 97%;
+    position:absolute;
+    flex:none;
+    }
+    .title01{
+        flex:auto;
+        display: none;
+        background-color: #ffffff;
+        text-align: right;
+        padding: 2px 0px 2px 2px;
+    }
+    #mobile-t{
+        display: block;
+        /* display: flex; */
+        text-align: right;
+        justify-content: flex-end;
+        /* padding: 2px 0px 2px 2px; */
+    }
+    .frame{
+        
+        /* display:inline-flexbox; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* flex-direction: row; */
+        margin: 20px 1px 20px 1px;
+        padding: 2px;
+        margin-left: auto;
+        /* flex-grow: 1; */
+        /* flex-grow:1 ; */
+    }
+    .left{
+        flex: none;
+        
+        margin: auto;
+        width: 90%;
+        
+    }
+    .center{
+        flex: none  ;
+        margin: auto;
+        width: 90%;
+        margin: 10px 0px 10px 0px;
+    }
+    .right{
+        margin: 10px 0px 20px 0px;
+        flex: none;
+        width: 90%;
+        height: 50px;
+        margin: auto;
+        justify-content: left;
+        text-align: left;
+    }
+    .frame2 {
+        min-width: none;
+        display: inline-flexbox;
+        justify-content: center;
+        
+        margin: auto;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "B1" 
+          "B2"
+          "B3" 
+          "B4"
+          "B5" 
+          "B6"
+          "B7" 
+          "B8"
+          "B9" 
+          "B10"
+          "B11" 
+          "B12";
+          
+      }
+    .pic{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    vertical-align: top;
+    }
+    .block{
+        text-align: center;
+        line-height: 78px;
+        
+    }
+    
+}
+
+   
